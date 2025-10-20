@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { BookOpenText, Drumstick, MapPin } from 'lucide-react';
+import { BookOpenText, Drumstick, MapPin, Instagram, Mail, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MenuCard } from '@/components/MenuCard';
@@ -58,6 +58,7 @@ export default async function Home() {
     mapPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/bali-map/1200/800';
 
   return (
+    <div className="flex flex-col">
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4 sm:p-8 overflow-x-hidden">
       <div className="flex flex-col items-center justify-center text-center w-full max-w-7xl mx-auto">
         <div
@@ -212,7 +213,43 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
     </main>
+    <footer className="w-full bg-card text-card-foreground py-16 px-4 sm:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+            <h2 className="font-headline text-5xl sm:text-6xl font-black uppercase tracking-tighter text-primary mb-6" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
+                Ready for your daily crunch?
+            </h2>
+            <Button
+                asChild
+                size="lg"
+                className="font-bold text-lg px-8 py-6 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-10"
+            >
+                <Link href="/order" className="flex items-center justify-center">
+                    Order Now
+                </Link>
+            </Button>
+            <div className="flex justify-center items-center gap-6 mb-10">
+                <Link href="/menu" className="text-lg font-medium text-secondary hover:text-primary transition-colors">See Menu</Link>
+                <Link href="#" className="text-lg font-medium text-secondary hover:text-primary transition-colors">Contact</Link>
+                <Link href="#" className="text-lg font-medium text-secondary hover:text-primary transition-colors">Instagram</Link>
+            </div>
+            <div className="flex justify-center items-center gap-4 mb-8">
+                <Link href="#" aria-label="Instagram">
+                    <Instagram className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
+                </Link>
+                <Link href="#" aria-label="Email">
+                    <Mail className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
+                </Link>
+                <Link href="#" aria-label="Phone">
+                    <Phone className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
+                </Link>
+            </div>
+            <div className="border-t border-border/20 pt-8">
+                <p className="font-headline text-3xl font-black uppercase tracking-tighter">TENDIES</p>
+                <p className="text-sm text-muted-foreground mt-2">&copy; {new Date().getFullYear()} Tendies. All Rights Reserved.</p>
+            </div>
+        </div>
+      </footer>
+    </div>
   );
 }
