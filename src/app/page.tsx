@@ -3,6 +3,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { BookOpenText, Drumstick } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MenuCard } from '@/components/MenuCard';
 
 export default async function Home() {
   const heroPlaceholder = PlaceHolderImages.find(
@@ -11,12 +12,18 @@ export default async function Home() {
   const aboutPlaceholder = PlaceHolderImages.find(
     (img) => img.id === 'about-tenders'
   );
+  const menuPlaceholders = {
+    classic: PlaceHolderImages.find((img) => img.id === 'classic-crunch'),
+    spicy: PlaceHolderImages.find((img) => img.id === 'spicy-blaze'),
+    honey: PlaceHolderImages.find((img) => img.id === 'honey-gold'),
+    garlic: PlaceHolderImages.find((img) => img.id === 'garlic-butter'),
+  };
 
   const heroImageUrl =
-    heroPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/tendies1/800/600';
+    heroPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/hero-tenders/800/600';
 
   const aboutImageUrl =
-    aboutPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/tendies2/800/600';
+    aboutPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/about-tenders/600/800';
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4 sm:p-8 overflow-x-hidden">
@@ -73,7 +80,7 @@ export default async function Home() {
       </div>
 
       {/* About Section */}
-      <section className="w-full max-w-7xl mx-auto p-4 sm:p-8">
+      <section id="about" className="w-full max-w-7xl mx-auto p-4 sm:p-8 my-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="relative w-full aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-black/50 transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <Image
@@ -98,6 +105,48 @@ export default async function Home() {
               At Tendies, we take one thing seriously — the perfect chicken tender. Fresh chicken, golden crunch, and sauces that slap.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Menu Section */}
+      <section id="menu" className="w-full max-w-7xl mx-auto p-4 sm:p-8 my-16">
+        <div className="text-center mb-12">
+            <h2 className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-primary mb-4" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
+                Our Flavors
+            </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <MenuCard
+                placeholder={menuPlaceholders.classic}
+                title="Classic Crunch"
+                tagline="The Original Legend"
+            />
+            <MenuCard
+                placeholder={menuPlaceholders.spicy}
+                title="Spicy Blaze"
+                tagline="Feel the Heat"
+            />
+            <MenuCard
+                placeholder={menuPlaceholders.honey}
+                title="Honey Gold"
+                tagline="Sweet & Savory"
+            />
+            <MenuCard
+                placeholder={menuPlaceholders.garlic}
+                title="Garlic Butter"
+                tagline="A Savory Delight"
+            />
+        </div>
+        <div className="text-center mt-12">
+             <Button
+                asChild
+                size="lg"
+                className="font-bold text-lg px-8 py-6 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+                <Link href="/menu" className="flex items-center justify-center">
+                    See Full Menu
+                </Link>
+            </Button>
         </div>
       </section>
 
