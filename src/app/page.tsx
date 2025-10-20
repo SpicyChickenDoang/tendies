@@ -228,8 +228,16 @@ export default async function Home() {
         </div>
       </section>
     </main>
-    <footer className="w-full bg-card text-card-foreground py-16 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto text-center">
+    <footer 
+        className="relative w-full text-card-foreground py-16 px-4 sm:px-8 overflow-hidden"
+        style={{
+            backgroundImage: "url('/assets/images/tendies-pattern.jpg')",
+            backgroundSize: '400px',
+            backgroundRepeat: 'repeat',
+        }}
+    >
+        <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
+        <div className="relative max-w-7xl mx-auto text-center">
             <h2 className="font-headline text-5xl sm:text-6xl font-black uppercase tracking-tighter text-primary mb-6" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
                 Ready for your daily crunch?
             </h2>
