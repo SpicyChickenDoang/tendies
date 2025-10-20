@@ -35,6 +35,12 @@
       "description": "A savory chicken tender drenched in garlic butter and herbs.",
       "imageUrl": "https://images.unsplash.com/photo-1560953617-d40293abb3d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnYXJsaWMlMjBjaGlja2VufGVufDB8fHx8MTc2MDkzMDU3NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "garlic chicken"
+    },
+    {
+      "id": "bali-map",
+      "description": "A stylized map of Bali showing the location of Tendies restaurant.",
+      "imageUrl": "https://images.unsplash.com/photo-1518544914043-ada5ab6515da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWxpJTIwbWFwfGVufDB8fHx8MTc2MDk4MjYyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map Bali"
     }
   ]
 }
