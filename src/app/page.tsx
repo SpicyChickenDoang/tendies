@@ -74,7 +74,7 @@ export default async function Home() {
             priority
           />
           <p className="font-headline text-lg sm:text-xl md:text-2xl font-semibold uppercase tracking-wider text-primary">
-            Crispy. Golden. Legendary.
+            Dip It. Lock It. Get Jiggy with It.
           </p>
         </div>
 
