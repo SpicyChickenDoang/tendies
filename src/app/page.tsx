@@ -133,8 +133,7 @@ export default async function Home() {
       </section>
 
       {/* About & Delivery Section */}
-      <section id="about" className="w-full max-w-7xl mx-auto p-4 sm:p-8 my-16 flex flex-col gap-16 md:gap-32">
-        {/* About Row */}
+      <section id="about" className="w-full max-w-7xl mx-auto p-4 sm:p-8 my-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="relative w-full aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-black/50 transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <Image
@@ -153,23 +152,12 @@ export default async function Home() {
           </div>
           <div className="text-center md:text-left">
             <h2 className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-primary mb-4" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-              It’s All About the Crunch.
-            </h2>
-            <p className="text-lg md:text-xl text-secondary leading-relaxed max-w-md mx-auto md:mx-0">
-              At Tendies, we take one thing seriously — the perfect chicken tender. Fresh chicken, golden crunch, and sauces that slap.
-            </p>
-          </div>
-        </div>
-        {/* Delivery Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-           <div className="text-center md:text-left md:order-last">
-            <h2 className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-primary mb-4" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
-              Get it Delivered.
+              The Perfect Crunch, Delivered.
             </h2>
             <p className="text-lg md:text-xl text-secondary leading-relaxed max-w-md mx-auto md:mx-0 mb-8">
-              Craving that crunch? Get your Tendies delivered hot and fresh right to your door. It's never been easier to satisfy your craving.
+              We're obsessed with the perfect chicken tender — fresh chicken, golden crunch, and sauces that slap. Craving it now? Get your Tendies delivered hot and fresh right to your door.
             </p>
-            <Button
+             <Button
                 asChild
                 size="lg"
                 className="font-bold text-lg px-8 py-6 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1"
@@ -179,16 +167,6 @@ export default async function Home() {
                     Order for Delivery
                 </Link>
             </Button>
-          </div>
-          <div className="relative w-full aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-black/50 transform hover:scale-105 transition-transform duration-300 ease-in-out">
-            <Image
-              src={takeawayImageUrl}
-              alt={takeawayPlaceholder?.description ?? 'Tendies takeaway bags floating'}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              data-ai-hint={takeawayPlaceholder?.imageHint ?? 'takeaway bags'}
-            />
           </div>
         </div>
       </section>
