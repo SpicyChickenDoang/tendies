@@ -1,9 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { BookOpenText, Drumstick } from 'lucide-react';
 import { type ImagePlaceholder } from '@/lib/placeholder-images';
 
 interface HeroProps {
@@ -47,29 +44,6 @@ export function Hero({ placeholder }: HeroProps) {
         <p className="font-headline text-lg sm:text-xl md:text-2xl font-semibold uppercase tracking-wider text-primary">
           Dip It. Lock It. Get Jiggy with It.
         </p>
-        <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-          <Button
-            asChild
-            size="lg"
-            className="font-bold text-lg px-8 py-6 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            <Link href="/order" className="flex items-center justify-center">
-              <Drumstick className="mr-2 h-5 w-5" />
-              Order Now
-            </Link>
-          </Button>
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="font-bold text-lg px-8 py-6 rounded-full border-2 border-primary-foreground text-primary-foreground bg-transparent hover:bg-primary-foreground hover:text-background transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            <Link href="/menu" className="flex items-center justify-center">
-              <BookOpenText className="mr-2 h-5 w-5" />
-              See Menu
-            </Link>
-          </Button>
-        </div>
       </div>
     </section>
   );
