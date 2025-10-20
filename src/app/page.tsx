@@ -65,9 +65,14 @@ export default async function Home() {
           className="flex flex-col items-center gap-2 mb-8"
           style={{ textShadow: '0 4px 12px rgba(0, 0, 0, 0.4)' }}
         >
-          <h1 className="font-headline text-6xl sm:text-8xl md:text-9xl font-black uppercase tracking-tighter">
-            TENDIES
-          </h1>
+          <Image
+            src="/assets/images/logo.webp"
+            alt="Tendies Logo"
+            width={600}
+            height={150}
+            className="w-4/5 max-w-[600px]"
+            priority
+          />
           <p className="font-headline text-lg sm:text-xl md:text-2xl font-semibold uppercase tracking-wider text-primary">
             Crispy. Golden. Legendary.
           </p>
