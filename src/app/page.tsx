@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { BookOpenText, Drumstick, MapPin, Instagram, Mail, Phone } from 'lucide-react';
+import { BookOpenText, Drumstick, MapPin, Instagram, Mail, Phone, ShoppingBag } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MenuCard } from '@/components/MenuCard';
@@ -46,6 +46,9 @@ export default async function Home() {
    const mapPlaceholder = PlaceHolderImages.find(
     (img) => img.id === 'bali-map'
   );
+  const takeawayPlaceholder = PlaceHolderImages.find(
+    (img) => img.id === 'takeaway-bags'
+  );
 
 
   const heroImageUrl =
@@ -56,6 +59,9 @@ export default async function Home() {
 
   const mapImageUrl =
     mapPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/bali-map/1200/800';
+
+  const takeawayImageUrl =
+    takeawayPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/takeaway-bags/1200/800';
 
   return (
     <div className="flex flex-col">
@@ -224,6 +230,40 @@ export default async function Home() {
                 <MapPin className="w-16 h-16 text-primary drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)] animate-bounce" strokeWidth={1.5} />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-50"/>
+          </div>
+        </div>
+      </section>
+
+       {/* Delivery Section */}
+      <section id="delivery" className="w-full max-w-7xl mx-auto p-4 sm:p-8 my-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+           <div className="text-center md:text-left md:order-last">
+            <h2 className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-primary mb-4" style={{textShadow: '0 2px 4px rgba(0,0,0,0.2)'}}>
+              Get it Delivered.
+            </h2>
+            <p className="text-lg md:text-xl text-secondary leading-relaxed max-w-md mx-auto md:mx-0 mb-8">
+              Craving that crunch? Get your Tendies delivered hot and fresh right to your door. It's never been easier to satisfy your craving.
+            </p>
+            <Button
+                asChild
+                size="lg"
+                className="font-bold text-lg px-8 py-6 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+                <Link href="/order" className="flex items-center justify-center">
+                    <ShoppingBag className="mr-2 h-5 w-5" />
+                    Order for Delivery
+                </Link>
+            </Button>
+          </div>
+          <div className="relative w-full aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl shadow-black/50 transform hover:scale-105 transition-transform duration-300 ease-in-out">
+            <Image
+              src={takeawayImageUrl}
+              alt={takeawayPlaceholder?.description ?? 'Tendies takeaway bags floating'}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              data-ai-hint={takeawayPlaceholder?.imageHint ?? 'takeaway bags'}
+            />
           </div>
         </div>
       </section>

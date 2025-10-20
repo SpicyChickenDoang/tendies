@@ -41,6 +41,12 @@
       "description": "A stylized map of Bali showing the location of Tendies restaurant.",
       "imageUrl": "https://images.unsplash.com/photo-1518544914043-ada5ab6515da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWxpJTIwbWFwfGVufDB8fHx8MTc2MDk4MjYyMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "map Bali"
+    },
+    {
+      "id": "takeaway-bags",
+      "description": "Premium branded takeaway bags for Tendies, floating against a blue background.",
+      "imageUrl": "/assets/images/p-takeaway.jpg",
+      "imageHint": "takeaway bags"
     }
   ]
 }
