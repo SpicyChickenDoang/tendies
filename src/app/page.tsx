@@ -29,7 +29,9 @@ export default async function Home() {
         <Hero placeholder={heroPlaceholder} />
         <AnimatedDivider />
         <About placeholder={aboutPlaceholder} />
+        <AnimatedDivider />
         <Menu placeholders={menuPlaceholders} />
+        <AnimatedDivider />
         <Location placeholder={mapPlaceholder} />
       </main>
       <Footer />
