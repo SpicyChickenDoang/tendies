@@ -1,4 +1,3 @@
-import { generateFoodImages } from '@/ai/flows/generate-food-images';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { BookOpenText, Drumstick } from 'lucide-react';
@@ -6,20 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default async function Home() {
-  let imageUrl: string;
-  const placeholder = PlaceHolderImages.find((img) => img.id === 'hero-tenders');
+  const placeholder = PlaceHolderImages.find(
+    (img) => img.id === 'hero-tenders'
+  );
 
-  try {
-    const result = await generateFoodImages({
-      description:
-        'A cinematic, premium food photography close-up of golden, crunchy, and juicy chicken tenders. The tenders have glossy highlights and are under warm, appetizing lighting. The background is a clean, dark, out-of-focus surface. The aesthetic is high-contrast, confident, and playful, like a Shake Shack or Wingstop ad.',
-    });
-    imageUrl = result.imageUrl;
-  } catch (error) {
-    console.error('Failed to generate food image:', error);
-    imageUrl =
-      placeholder?.imageUrl ?? 'https://picsum.photos/seed/tendies1/800/600';
-  }
+  const imageUrl =
+    placeholder?.imageUrl ?? 'https://picsum.photos/seed/tendies1/800/600';
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4 sm:p-8 overflow-hidden">
