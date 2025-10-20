@@ -5,6 +5,12 @@
       "description": "A close-up of golden, crunchy chicken tenders with glossy highlights and warm lighting.",
       "imageUrl": "https://images.unsplash.com/photo-1627662236973-4fd8358fa206?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGlja2VuJTIwdGVuZGVyc3xlbnwwfHx8fDE3NjA5MjkyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "chicken tenders"
+    },
+    {
+      "id": "about-tenders",
+      "description": "A vibrant photo of crispy chicken tenders arranged artfully, with sauce splashes and a playful vibe.",
+      "imageUrl": "https://images.unsplash.com/photo-1627662236973-4fd8358fa206?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGlja2VuJTIwdGVuZGVyc3xlbnwwfHx8fDE3NjA5MjkyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken tenders"
     }
   ]
 }
