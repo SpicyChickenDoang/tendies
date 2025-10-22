@@ -56,7 +56,7 @@ export default function OrderPage() {
                 height={300}
               />
             </Link>
-            <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer">
+            <Link href="https://r.grab.com/g/6-0ABEA09D71BF4051BA2D692FA67DEB22_MEXMPS-6-C7DTJ4DZDELHBA" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/assets/icons/grabfood.png"
                 alt="GoFood Logo"

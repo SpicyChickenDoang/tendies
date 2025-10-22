@@ -61,7 +61,7 @@ export function Location({ placeholder }: LocationProps) {
               height={100}
             />
           </Link>
-          <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer" className="animate-bounce delay-200">
+          <Link href="https://r.grab.com/g/6-0ABEA09D71BF4051BA2D692FA67DEB22_MEXMPS-6-C7DTJ4DZDELHBA" target="_blank" rel="noopener noreferrer" className="animate-bounce delay-200">
             {/* <MapPin size={100} color="blue" /> */}
             <Image
               src="/assets/icons/grabfood.png"
