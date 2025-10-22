@@ -34,13 +34,13 @@ export function MenuCard({ placeholder, title, tagline }: MenuCardProps) {
         <p className="text-base font-semibold uppercase tracking-wider mb-4">
           {tagline}
         </p>
-        <Button
+        {/* <Button
             size="sm"
             variant="secondary"
             className="w-full font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
           Add to Order
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

@@ -45,16 +45,39 @@ export default function OrderPage() {
           Get ready!
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <Button
-            size="lg"
-            className="font-bold text-lg px-8 py-6 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 ease-in-out shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
-          >
-            <ShoppingBag className="mr-2 h-5 w-5" />
-            Start My Order
-          </Button>
+        <div className="flex flex-col sm:flex-row items-center gap-6 mt-6">
+          <div className='flex items-center gap-5'>
+
+            <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/assets/icons/gofood.png"
+                alt="GoFood Logo"
+                width={300}
+                height={300}
+              />
+            </Link>
+            <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/assets/icons/grabfood.png"
+                alt="GoFood Logo"
+                width={300}
+                height={300}
+              />
+            </Link>
+            <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/assets/icons/gmaps.png"
+                alt="GoFood Logo"
+                width={300}
+                height={300}
+              />
+            </Link>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center mt-10">
           <Button asChild variant="outline" size="lg" className="bg-transparent text-foreground border-2 border-current font-bold text-lg px-8 py-6 rounded-full hover:bg-foreground hover:text-background">
-            <Link href="/">
+            <Link href="/#about">
               <ArrowLeft className="mr-2 h-4 w-4" /> Go Back Home
             </Link>
           </Button>
