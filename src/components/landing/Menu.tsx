@@ -16,10 +16,10 @@ interface MenuProps {
 
 export function Menu({ placeholders }: MenuProps) {
   return (
-    <section id="menu" className="w-full max-w-7xl mx-auto p-4 sm:p-8 my-16">
+    <section id="menu" className="w-full max-w-7xl mx-auto p-4 sm:p-8 my-16 bg-primary">
       <div className="text-center mb-12">
         <h2
-          className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-primary mb-4"
+          className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-secondary mb-4"
           style={{ textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
         >
           Our Flavors
@@ -51,7 +51,7 @@ export function Menu({ placeholders }: MenuProps) {
         <Button
           asChild
           size="lg"
-          className="font-bold text-lg px-8 py-6 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          className="font-bold text-lg px-8 py-6 rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1"
         >
           <Link href="/menu" className="flex items-center justify-center">
             See Full Menu

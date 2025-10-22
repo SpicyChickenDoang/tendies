@@ -17,11 +17,11 @@ export function Footer() {
       className="relative w-full text-card-foreground py-16 px-4 sm:px-8 overflow-hidden"
       style={{
         backgroundImage: "url('/assets/images/tendies-pattern.jpg')",
-        backgroundSize: '400px',
+        backgroundSize:'700px',
         backgroundRepeat: 'repeat',
       }}
     >
-      <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-background/90"></div>
       <div className="relative max-w-7xl mx-auto text-center">
         <h2
           className="font-headline text-5xl sm:text-6xl font-black uppercase tracking-tighter text-primary mb-6"
@@ -41,19 +41,19 @@ export function Footer() {
         <div className="flex justify-center items-center gap-6 mb-10">
           <Link
             href="/menu"
-            className="text-lg font-medium text-secondary hover:text-primary transition-colors"
+            className="text-lg font-medium text-primary hover:text-primary/70 transition-colors"
           >
             See Menu
           </Link>
           <Link
             href="#"
-            className="text-lg font-medium text-secondary hover:text-primary transition-colors"
+            className="text-lg font-medium text-primary hover:text-primary/70 transition-colors"
           >
             Contact
           </Link>
           <Link
             href="#"
-            className="text-lg font-medium text-secondary hover:text-primary transition-colors"
+            className="text-lg font-medium text-primary hover:text-primary/70 transition-colors"
           >
             Instagram
           </Link>

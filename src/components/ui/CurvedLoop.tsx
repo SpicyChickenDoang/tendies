@@ -120,7 +120,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     >
       <svg
         className="select-none w-full overflow-visible aspect-[100/12] text-[2.5rem] font-bold uppercase leading-none"
-        viewBox="0 0 1440 120"
+        viewBox="0 0 1440 60"
       >
         <text ref={measureRef} xmlSpace="preserve" style={{ visibility: 'hidden', opacity: 0, pointerEvents: 'none' }}>
           {text}
