@@ -44,7 +44,7 @@ export function Location({ placeholder }: LocationProps) {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <MapPin
-              className="w-16 h-16 text-primary drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)] animate-bounce"
+              className="w-16 h-16 text-blue-700 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)] animate-bounce"
               strokeWidth={1.5}
             />
           </div>
@@ -52,14 +52,32 @@ export function Location({ placeholder }: LocationProps) {
         </div>
         <div className='flex items-center gap-5'>
 
-          <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer" className="animate-bounce delay-100">
-            <MapPin size={32} color="green" />
+          <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer" className="animate-bounce delay-200">
+            {/* <MapPin size={32} color="green" /> */}
+            <Image
+              src="/assets/icons/gofood.png"
+              alt="GoFood Logo"
+              width={100}
+              height={100}
+            />
           </Link>
           <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer" className="animate-bounce delay-200">
-            <MapPin size={32} color="blue" />
+            {/* <MapPin size={100} color="blue" /> */}
+            <Image
+              src="/assets/icons/grabfood.png"
+              alt="GoFood Logo"
+              width={100}
+              height={100}
+            />
           </Link>
-          <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer" className="animate-bounce delay-300">
-            <MapPin size={32} color="red" />
+          <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer" className="animate-bounce delay-200">
+            {/* <MapPin size={100} color="red" /> */}
+            <Image
+              src="/assets/icons/gmaps.png"
+              alt="GoFood Logo"
+              width={100}
+              height={100}
+            />
           </Link>
         </div>
       </div>

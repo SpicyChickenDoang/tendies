@@ -16,7 +16,7 @@ export function Footer() {
     <footer
       className="relative w-full text-card-foreground py-16 px-4 sm:px-8 overflow-hidden"
       style={{
-        backgroundImage: "url('/assets/images/tendies-pattern.jpg')",
+        backgroundImage: "url('/assets/images/tendies-pattern.webp')",
         backgroundSize:'700px',
         backgroundRepeat: 'repeat',
       }}
