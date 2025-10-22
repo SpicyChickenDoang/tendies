@@ -10,7 +10,7 @@ export function AnimatedDivider() {
           interactive={false}
           curveAmount={0}
           direction='left'
-          speed={3}
+          speed={2}
         />
       {/* </div> */}
     </section>

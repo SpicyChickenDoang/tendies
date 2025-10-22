@@ -16,7 +16,7 @@ interface MenuProps {
 
 export function Menu({ placeholders }: MenuProps) {
   return (
-    <section id="menu" className="w-full max-w-7xl mx-auto p-4 sm:p-8 my-16 bg-primary">
+    <section id="menu" className="w-full p-4 sm:p-8 bg-primary">
       <div className="text-center mb-12">
         <h2
           className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-secondary mb-4"
