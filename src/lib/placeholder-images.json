@@ -47,6 +47,24 @@
       "description": "Premium branded takeaway bags for Tendies, floating against a blue background.",
       "imageUrl": "/assets/images/p-takeaway.jpg",
       "imageHint": "takeaway bags"
+    },
+    {
+      "id": "core-meal",
+      "description": "Three signature crispy chicken tenders.",
+      "imageUrl": "https://images.unsplash.com/photo-1627662168223-7df99068099a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlja2VuJTIwdGVuZGVyc3xlbnwwfHx8fDE3NjEyMzU1NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken tenders"
+    },
+    {
+      "id": "combo-up",
+      "description": "Chicken tenders with seasoned fries and a drink.",
+      "imageUrl": "https://images.unsplash.com/photo-1758578484486-74373f45b0b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZW5kZXJzJTIwZnJpZXN8ZW58MHx8fHwxNzYxMjM3NDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tenders fries"
+    },
+    {
+      "id": "party-pack",
+      "description": "A large box of crispy chicken tenders for sharing.",
+      "imageUrl": "https://images.unsplash.com/photo-1728034261748-f03195cf54ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZW5kZXJzJTIwYm94fGVufDB8fHx8MTc2MTIzNzQ0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tenders box"
     }
   ]
 }
