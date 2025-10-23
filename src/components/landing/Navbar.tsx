@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -24,7 +25,7 @@ export function Navbar() {
 
   const navLinks = [
     { href: '/menu', label: 'Menu' },
-    { href: '/#about', label: 'About' },
+    { href: '/about', label: 'About' },
     { href: '/#location', label: 'Find Us' },
   ];
 
