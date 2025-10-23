@@ -16,8 +16,8 @@ interface MenuProps {
 
 export function Menu({ placeholders }: MenuProps) {
   return (
-    <section id="menu" className="w-full p-4 sm:p-8 bg-primary">
-      <div className="text-center mb-12">
+    <section id="menu" className="w-full bg-primary">
+      <div className="text-center mb-12 mt-12">
         <h2
           className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-secondary mb-4"
           style={{ textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
@@ -47,7 +47,7 @@ export function Menu({ placeholders }: MenuProps) {
           tagline="A Savory Delight"
         />
       </div>
-      <div className="text-center mt-12">
+      <div className="text-center mt-12 mb-12">
         <Button
           asChild
           size="lg"

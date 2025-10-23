@@ -12,6 +12,11 @@ export function Intro({ placeholder }: IntroProps) {
     placeholder?.imageUrl ??
     'https://picsum.photos/seed/about-tenders/1920/1080';
 
+  const commonProps = {
+    alt: placeholder?.description ?? 'Crispy chicken tenders in a vibrant setting',
+    fill: true,
+  };
+
   return (
     <section
       id="intro"
@@ -19,11 +24,16 @@ export function Intro({ placeholder }: IntroProps) {
     >
       <div className="absolute inset-0 z-0">
         <Image
+          src={"/assets/images/tendies-mobile.png"}
+          className="object-cover block md:hidden" // block on mobile, hidden on screens >= md
+          {...commonProps}
+        />
+
+        {/* Desktop Image: visible ONLY on medium screens and up (min-width: 768px) */}
+        <Image
           src={"/assets/images/tendies-store.png"}
-          alt={placeholder?.description ?? 'Crispy chicken tenders in a vibrant setting'}
-          fill
-          className="object-cover"
-          data-ai-hint={placeholder?.imageHint ?? 'chicken tenders'}
+          className="object-cover hidden md:block" // hidden on mobile, block on screens >= md
+          {...commonProps}
         />
       </div>
 
