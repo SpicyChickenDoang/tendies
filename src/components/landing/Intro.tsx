@@ -26,7 +26,7 @@ export function Intro({ placeholder }: IntroProps) {
     >
       <div className="absolute inset-0 bg-background/80"></div>
       
-      <div className="container relative z-10 mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div className="container relative z-10 mx-auto px-4 pt-24 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-8">
           
           {/* Left: Text Content */}
