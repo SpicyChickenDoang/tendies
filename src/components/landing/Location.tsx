@@ -29,10 +29,6 @@ export function Location({ placeholder }: LocationProps) {
             Available for pickup and delivery across Bali. Order now on GoFood &
             GrabFood.
           </p>
-          <div className="flex justify-center md:justify-start items-center gap-4">
-            {/* <GoFoodIcon />
-            <GrabFoodIcon /> */}
-          </div>
         </div>
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg shadow-black/50">
           <Image

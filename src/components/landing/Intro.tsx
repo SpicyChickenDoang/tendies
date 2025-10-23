@@ -13,24 +13,23 @@ export function Intro({ placeholder }: IntroProps) {
     'https://picsum.photos/seed/about-tenders/1920/1080';
 
   return (
-    <section 
-      id="intro" 
+    <section
+      id="intro"
       className="relative w-full bg-background text-foreground h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src={introImageUrl}
+          src={"/assets/images/tendies-store.png"}
           alt={placeholder?.description ?? 'Crispy chicken tenders in a vibrant setting'}
           fill
           className="object-cover"
           data-ai-hint={placeholder?.imageHint ?? 'chicken tenders'}
         />
-        <div className="absolute inset-0 bg-black/50"></div>
       </div>
-      
-      <div className="container relative z-10 mx-auto px-4 text-center">
+
+      <div className="absolute bottom-16 z-20 text-center">
         <h1
-          className="font-headline text-6xl sm:text-7xl lg:text-9xl text-white font-black uppercase tracking-tighter"
+          className="font-headline text-6xl sm:text-7xl lg:text-9xl text-white font-black uppercase"
           style={{ textShadow: '0 6px 20px rgba(0,0,0,0.6)' }}
         >
           This Chicken Hits Different.

@@ -22,14 +22,6 @@ export default function AboutPage() {
         }}
     >
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="absolute top-0 left-4">
-            <Button asChild variant="outline" className="bg-background/80 text-foreground hover:bg-accent hover:text-accent-foreground mb-8">
-                <Link href="/">
-                <ArrowLeft className="mr-2 h-4 w-4" /> Go Back Home
-                </Link>
-            </Button>
-        </div>
-
         <div className="max-w-6xl mx-auto bg-background/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-4 border-primary shadow-2xl">
           <header className="text-center mb-12">
             <h1

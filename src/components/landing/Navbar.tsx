@@ -27,6 +27,7 @@ export function Navbar() {
     { href: '/menu', label: 'Menu' },
     { href: '/about', label: 'About' },
     { href: '/find-us', label: 'Find Us' },
+    { href: '/order', label: 'Order' },
   ];
 
   return (
@@ -36,10 +37,10 @@ export function Navbar() {
         isScrolled ? 'bg-background/80 backdrop-blur-lg shadow-md' : 'bg-transparent'
       )}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex h-20 items-center justify-between px- sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center">
           <Image
-            src="/assets/images/logo-white.png"
+            src="/assets/images/logo.webp"
             alt="Tendies Logo"
             width={160}
             height={53}
