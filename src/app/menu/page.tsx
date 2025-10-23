@@ -1,4 +1,3 @@
-
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -13,7 +12,7 @@ export default function MenuPage() {
     {
       id: 'core-meal',
       title: 'Core Meal (39k IDR)',
-      description: 'The perfect starting point. Three of our signature crispy tenders. Simple, delicious, and waiting for sauce.',
+      description: 'The perfect starting point. Our signature crispy tenders. Simple, delicious, and waiting for sauce.',
     },
     {
       id: 'combo-up',
@@ -46,7 +45,7 @@ export default function MenuPage() {
         }}
     >
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto bg-background/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-4 border-primary shadow-2xl">
+        <div className="max-w-6xl mx-auto bg-background/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-4 border-primary shadow-2xl">
             <header className="text-center mb-12">
                 <h1
                 className="font-headline text-6xl md:text-8xl font-black uppercase text-primary mb-4"
@@ -100,11 +99,11 @@ export default function MenuPage() {
                 The Sauce Bar is the Star
                 </h2>
                 <p className='text-center text-lg text-primary-foreground/90 mb-8 -mt-2 max-w-2xl mx-auto'>This is where the magic happens. Every tendie needs a partner in crime. Choose your player from our lineup of unique, must-try flavors.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
                 {sauces.map((sauce) => {
                   const placeholder = PlaceHolderImages.find(p => p.id === sauce.id);
                   return (
-                    <div key={sauce.id} className="bg-card rounded-lg border-2 border-secondary shadow-lg transform hover:rotate-2 transition-transform duration-300 overflow-hidden flex flex-col">
+                    <div key={sauce.id} className="bg-card rounded-lg border-2 border-secondary shadow-lg hover:scale-[110%] hover:z-10 duration-300 overflow-hidden">
                       {placeholder && (
                         <div className="relative w-full aspect-square">
                           <Image
@@ -117,8 +116,8 @@ export default function MenuPage() {
                         </div>
                       )}
                       <div className="p-4 flex flex-col flex-grow text-center">
-                        <h3 className="font-headline text-xl font-bold text-secondary mb-1">{sauce.title}</h3>
-                        <p className="text-sm text-primary-foreground/80 flex-grow">{sauce.description}</p>
+                        <h3 className="font-headline text-xl font-bold text-primary mb-1">{sauce.title}</h3>
+                        <p className="text-sm text-primary flex-grow">{sauce.description}</p>
                       </div>
                     </div>
                   )
