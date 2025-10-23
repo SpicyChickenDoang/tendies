@@ -35,7 +35,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg border-2 border-primary transform hover:rotate-2 transition-transform duration-300">
                <Image
-                    src={aboutPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/about-page/800/800'}
+                    src={"/assets/images/tendies-mobile.png"}
                     alt={aboutPlaceholder?.description ?? 'Vibrant photo of crispy chicken tenders'}
                     fill
                     className="object-cover"
