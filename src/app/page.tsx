@@ -7,8 +7,8 @@ import { Menu } from '@/components/landing/Menu';
 import { Intro } from '@/components/landing/Intro';
 
 export default async function Home() {
-  const aboutPlaceholder = PlaceHolderImages.find(
-    (img) => img.id === 'about-tenders'
+  const heroPlaceholder = PlaceHolderImages.find(
+    (img) => img.id === 'hero-tenders'
   );
   const menuPlaceholders = {
     classic: PlaceHolderImages.find((img) => img.id === 'classic-crunch'),
@@ -23,9 +23,8 @@ export default async function Home() {
   return (
     <div className="flex flex-col">
       <main className="flex min-h-screen flex-col items-center justify-center bg-background overflow-x-hidden">
-        <Intro placeholder={aboutPlaceholder} />
-        <AnimatedDivider />
-        <About placeholder={aboutPlaceholder} />
+        <Intro placeholder={heroPlaceholder} />
+        <About />
         <AnimatedDivider />
         <Menu placeholders={menuPlaceholders} />
         <AnimatedDivider />
