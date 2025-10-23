@@ -15,66 +15,64 @@ export function Footer() {
 
   return (
     <footer
-      className="relative w-full text-card-foreground py-16 px-4 sm:px-8 overflow-hidden"
+      className="relative w-full text-card-foreground py-8 px-4 sm:px-8 overflow-hidden"
       style={{
         backgroundImage: "url('/assets/images/tendies-pattern.webp')",
-        backgroundSize:'700px',
+        backgroundSize:'400px',
         backgroundRepeat: 'repeat',
       }}
     >
-      <div className="absolute inset-0 bg-background/90"></div>
-      <div className="relative max-w-7xl mx-auto text-center">
-        <h2
-          className="font-headline text-5xl sm:text-6xl font-black uppercase tracking-tighter text-primary mb-6"
-          style={{ textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
-        >
-          Dip It. Lock It. Get Jiggy With It!
-        </h2>
-        <Button
-          asChild
-          size="lg"
-          className="font-bold text-lg px-8 py-6 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-10"
-        >
-          <Link href="/order" className="flex items-center justify-center">
-            Order Now
-          </Link>
-        </Button>
-        <div className="flex justify-center items-center gap-6 mb-10">
-          <Link
-            href="/menu"
-            className="text-lg font-medium text-primary hover:text-primary/70 transition-colors"
-          >
-            See Menu
-          </Link>
-          <Link
-            href="/find-us"
-            className="text-lg font-medium text-primary hover:text-primary/70 transition-colors"
-          >
-            Contact
-          </Link>
-          <Link
-            href="#"
-            className="text-lg font-medium text-primary hover:text-primary/70 transition-colors"
-          >
-            Instagram
-          </Link>
+      <div className="absolute inset-0 bg-background/95"></div>
+      <div className="relative max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="text-center md:text-left">
+                <p className="font-headline text-3xl font-black uppercase tracking-tighter text-primary">
+                    TENDIES
+                </p>
+                <p className="text-sm text-muted-foreground mt-1">
+                    Crispy. Golden. Legendary.
+                </p>
+            </div>
+            <nav className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                 <Link
+                    href="/menu"
+                    className="text-base font-medium text-foreground hover:text-primary transition-colors"
+                >
+                    Menu
+                </Link>
+                <Link
+                    href="/about"
+                    className="text-base font-medium text-foreground hover:text-primary transition-colors"
+                >
+                    About
+                </Link>
+                <Link
+                    href="/find-us"
+                    className="text-base font-medium text-foreground hover:text-primary transition-colors"
+                >
+                    Find Us
+                </Link>
+                 <Link
+                    href="/order"
+                    className="text-base font-medium text-primary hover:text-primary/80 transition-colors"
+                >
+                    Order Now
+                </Link>
+            </nav>
+            <div className="flex justify-center items-center gap-4">
+                <Link href="#" aria-label="Instagram">
+                    <Instagram className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
+                </Link>
+                <Link href="#" aria-label="Email">
+                    <Mail className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
+                </Link>
+                <Link href="#" aria-label="Phone">
+                    <Phone className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
+                </Link>
+            </div>
         </div>
-        <div className="flex justify-center items-center gap-4 mb-8">
-          <Link href="#" aria-label="Instagram">
-            <Instagram className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
-          </Link>
-          <Link href="#" aria-label="Email">
-            <Mail className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
-          </Link>
-          <Link href="#" aria-label="Phone">
-            <Phone className="w-6 h-6 text-secondary hover:text-primary transition-colors" />
-          </Link>
-        </div>
-        <div className="border-t border-border/20 pt-8">
-          <p className="font-headline text-3xl font-black uppercase tracking-tighter">
-            TENDIES
-          </p>
-          <p className="text-sm text-muted-foreground mt-2">
+        <div className="border-t border-border/20 pt-6 mt-8 text-center">
+          <p className="text-sm text-muted-foreground">
             &copy; {year} Tendies. All Rights Reserved.
           </p>
         </div>
