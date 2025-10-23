@@ -33,23 +33,18 @@ export function About({ placeholder }: AboutProps) {
             className="font-headline text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tighter text-secondary mb-4"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
           >
-            FRESH, FUN &amp; FRIED IN BALI
+            The Perfect Crunch, Delivered.
           </h2>
           <div className="text-lg md:text-xl text-secondary leading-relaxed max-w-lg mx-auto md:mx-0 mb-8 space-y-4">
             <p>
-              TENDIES was born from a simple mission: create ridiculously good
-              chicken tenders and serve them in a cool, welcoming atmosphere.
-              We're a modern, fast-casual joint based right here in Bali,
-              created for a diverse crowd of locals and international
-              visitors.
+              Why wait for the weekend? Get Bali's best chicken tendies delivered
+              straight to your door. We've partnered with Gojek and Grab to
+              make sure your food arrives hot, crispy, and ready to devour.
             </p>
             <p>
-              Our secret? We focus on one thing: high-quality chicken breast
-              tendies. Our simple, modular menu lets us nail consistent quality
-              and minimize waste, which means you get a perfect bite every
-              time. We're all about that perfect balance of affordability and
-              quality, wrapped in a vibrant, trendy brand with a fresh, fun, 90s
-              vibe.
+              Perfect for a solo lunch, a feast with friends, or a late-night
+              craving. It's the same great taste, now available wherever you
+              are. Tap the button and get ready for a flavor experience.
             </p>
           </div>
           <Button
