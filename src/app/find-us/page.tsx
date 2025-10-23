@@ -38,7 +38,7 @@ export default function FindUsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg border-2 border-primary transform hover:rotate-2 transition-transform duration-300">
                     <Image
-                        src={mapPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/bali-map/1200/800'}
+                        src={"/assets/images/bali-map.jpg"}
                         alt={mapPlaceholder?.description ?? 'Map of our location in Bali'}
                         fill
                         className="object-cover"

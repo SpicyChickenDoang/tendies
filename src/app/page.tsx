@@ -30,7 +30,6 @@ export default async function Home() {
         <AnimatedDivider />
         <Location placeholder={mapPlaceholder} />
       </main>
-      <Footer />
     </div>
   );
 }

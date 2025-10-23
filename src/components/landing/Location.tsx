@@ -10,7 +10,7 @@ interface LocationProps {
 
 export function Location({ placeholder }: LocationProps) {
   const mapImageUrl =
-    placeholder?.imageUrl ?? 'https://picsum.photos/seed/bali-map/1200/800';
+    placeholder?.imageUrl ?? '/assets/images/bali-map.jpg';
 
   return (
     <section
@@ -32,7 +32,7 @@ export function Location({ placeholder }: LocationProps) {
         </div>
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg shadow-black/50">
           <Image
-            src={mapImageUrl}
+            src={"/assets/images/bali-map.jpg"}
             alt={placeholder?.description ?? 'Map of Bali'}
             fill
             className="object-cover"
