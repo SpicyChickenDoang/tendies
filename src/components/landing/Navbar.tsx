@@ -24,6 +24,7 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
+    { href: '/', label: 'Home' },
     { href: '/menu', label: 'Menu' },
     { href: '/about', label: 'About' },
     { href: '/find-us', label: 'Find Us' },
@@ -83,9 +84,9 @@ export function Navbar() {
                       className="h-10 w-auto"
                     />
                   </Link>
-                   <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
+                   {/* <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
                       <X className="h-6 w-6" />
-                   </Button>
+                   </Button> */}
                 </div>
                 <nav className="flex flex-col items-center justify-center flex-1 gap-6 text-center">
                   {navLinks.map((link) => (
