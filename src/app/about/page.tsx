@@ -44,13 +44,13 @@ export default function AboutPage() {
 
           <section className="space-y-6 text-lg md:text-xl text-center max-w-3xl mx-auto text-foreground/90">
               <p>
-                TENDIES was born from a simple mission: create ridiculously good chicken tenders and serve them in a cool, welcoming atmosphere. We're a modern, fast-casual joint based right here in Bali, created for a diverse crowd of locals and international visitors.
+                We started TENDIES with a radical idea: what if we made the crispiest, juiciest, most legendary chicken tenders on the planet? So we did. We're a throwback, fast-casual joint in the heart of Bali, serving up good times for locals and travelers alike.
               </p>
               <p>
-                Our secret? We focus on one thing: high-quality chicken breast tendies. Our simple, modular menu lets us nail consistent quality and minimize waste, which means you get a perfect bite every time.
+                What's the secret sauce? Obsession. We're laser-focused on one thing: perfect, high-quality chicken breast tendies. Our streamlined menu means every single order is consistently awesome and nothing goes to waste. That's how you get the perfect bite, every time.
               </p>
               <p>
-                We're all about that perfect balance of affordability and quality, wrapped in a vibrant, trendy brand with a fresh, fun, 90s vibe.
+                It’s all about premium quality without the price tag, wrapped in a vibrant brand with a fresh-to-death 90s vibe.
               </p>
           </section>
         </div>
