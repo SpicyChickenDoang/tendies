@@ -15,6 +15,7 @@ export function Intro({ placeholder }: IntroProps) {
   const commonProps = {
     alt: placeholder?.description ?? 'Crispy chicken tenders in a vibrant setting',
     fill: true,
+    priority: true
   };
 
   return (

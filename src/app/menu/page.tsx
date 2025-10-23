@@ -76,6 +76,7 @@ export default function MenuPage() {
                             src={placeholder.imageUrl}
                             alt={placeholder.description}
                             fill
+                            loading="lazy"
                             className="object-cover"
                             data-ai-hint={placeholder.imageHint}
                           />
@@ -110,6 +111,7 @@ export default function MenuPage() {
                             src={placeholder.imageUrl}
                             alt={placeholder.description}
                             fill
+                            loading="lazy"
                             className="object-cover"
                             data-ai-hint={placeholder.imageHint}
                           />
