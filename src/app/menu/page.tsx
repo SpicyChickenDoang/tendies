@@ -66,11 +66,11 @@ export default function MenuPage() {
                 >
                 Build Your Combo
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12 justify-center">
                 {menuItems.map((item, index) => {
                   const placeholder = PlaceHolderImages.find(p => p.id === item.id);
                   return (
-                    <div key={index} className="bg-card rounded-lg border-2 border-primary shadow-lg transform hover:-rotate-2 transition-transform duration-300 overflow-hidden flex flex-col">
+                    <div key={index} className="bg-card rounded-lg border-2 border-primary shadow-lg transform hover:-rotate-2 transition-transform duration-300 overflow-hidden flex flex-col md:last:col-span-2 lg:last:col-span-1 md:[&:nth-child(3)]:last:md:col-start-1 md:[&:nth-child(3)]:last:md:col-end-3 lg:[&:nth-child(3)]:last:lg:col-start-auto lg:[&:nth-child(3)]:last:lg:col-end-auto">
                       {placeholder && (
                         <div className="relative w-full aspect-[4/3]">
                           <Image
