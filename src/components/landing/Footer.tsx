@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -46,7 +47,7 @@ export function Footer() {
             See Menu
           </Link>
           <Link
-            href="#"
+            href="/find-us"
             className="text-lg font-medium text-primary hover:text-primary/70 transition-colors"
           >
             Contact
