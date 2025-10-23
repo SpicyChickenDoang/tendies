@@ -28,7 +28,7 @@ export function Footer() {
           className="font-headline text-5xl sm:text-6xl font-black uppercase tracking-tighter text-primary mb-6"
           style={{ textShadow: '0 2px 4px rgba(0,0,0,0.2)' }}
         >
-          Ready for your daily crunch?
+          Dip It. Lock It. Get Jiggy With It!
         </h2>
         <Button
           asChild
