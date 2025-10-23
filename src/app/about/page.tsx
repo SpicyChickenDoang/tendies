@@ -33,30 +33,25 @@ export default function AboutPage() {
             </Link>
           </Button>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="md:col-span-1 md:row-span-1 bg-card/20 p-8 rounded-2xl border border-border/10 flex items-center justify-center">
-               <h1
-                className="font-headline text-5xl md:text-6xl font-black uppercase text-primary text-center"
-                style={{ textShadow: '0 4px 15px rgba(0,0,0,0.5)' }}
-              >
-                Fresh, Fun & Fried in Bali
-              </h1>
-            </div>
-            <div className="bg-card/20 p-8 rounded-2xl border border-border/10">
-              <p className="text-lg text-foreground/90">
-                We started TENDIES with a radical idea: what if we made the crispiest, juiciest, most legendary chicken tenders on the planet? So we did. We're a throwback, fast-casual joint in the heart of Bali, serving up good times for locals and travelers alike.
-              </p>
-            </div>
-            <div className="bg-card/20 p-8 rounded-2xl border border-border/10">
-               <p className="text-lg text-foreground/90">
-                What's the secret sauce? Obsession. We're laser-focused on one thing: perfect, high-quality chicken breast tendies. Our streamlined menu means every single order is consistently awesome and nothing goes to waste. That's how you get the perfect bite, every time.
-              </p>
-            </div>
-             <div className="bg-card/20 p-8 rounded-2xl border border-border/10">
-              <p className="text-lg text-foreground/90">
-                It’s all about premium quality without the price tag, wrapped in a vibrant brand with a fresh-to-death 90s vibe.
-              </p>
-            </div>
+          <header className="text-center mb-12">
+            <h1
+              className="font-headline text-6xl md:text-8xl font-black uppercase text-primary mb-4"
+              style={{ textShadow: '0 4px 15px rgba(0,0,0,0.5)' }}
+            >
+              Fresh, Fun & Fried in Bali
+            </h1>
+          </header>
+
+          <div className="space-y-6 text-lg md:text-xl text-center max-w-3xl mx-auto text-foreground/90 bg-card/20 p-8 rounded-2xl border border-border/10">
+            <p>
+              We started TENDIES with a radical idea: what if we made the crispiest, juiciest, most legendary chicken tenders on the planet? So we did. We're a throwback, fast-casual joint in the heart of Bali, serving up good times for locals and travelers alike.
+            </p>
+            <p>
+              What's the secret sauce? Obsession. We're laser-focused on one thing: perfect, high-quality chicken breast tendies. Our streamlined menu means every single order is consistently awesome and nothing goes to waste. That's how you get the perfect bite, every time.
+            </p>
+            <p>
+              It’s all about premium quality without the price tag, wrapped in a vibrant brand with a fresh-to-death 90s vibe.
+            </p>
           </div>
         </div>
       </div>
