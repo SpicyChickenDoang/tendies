@@ -3,7 +3,7 @@
 
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
-import { ArrowLeft, MapPin, Clock, Navigation } from 'lucide-react';
+import { ArrowLeft, MapPin, Clock, Navigation, ShoppingBag } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -69,6 +69,38 @@ export default function FindUsPage() {
                         <div className="space-y-1">
                             <p><strong className="font-semibold text-secondary">Mon - Thu:</strong> 10am - 12am</p>
                             <p><strong className="font-semibold text-secondary">Fri - Sun:</strong> 9am - 3am</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 className="font-headline text-2xl font-bold text-primary mb-4 flex items-center">
+                            <ShoppingBag className="mr-3 h-6 w-6" />
+                            Order For Delivery
+                        </h3>
+                        <div className="flex items-center gap-6">
+                            <Link href="https://gofood.link/a/Q9vkRR7" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
+                                <Image
+                                    src="/assets/icons/gofood.png"
+                                    alt="GoFood Logo"
+                                    width={80}
+                                    height={80}
+                                />
+                            </Link>
+                            <Link href="https://r.grab.com/g/6-0ABEA09D71BF4051BA2D692FA67DEB22_MEXMPS-6-C7DTJ4DZDELHBA" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
+                                <Image
+                                    src="/assets/icons/grabfood.png"
+                                    alt="GrabFood Logo"
+                                    width={80}
+                                    height={80}
+                                />
+                            </Link>
+                            <Link href="https://maps.app.goo.gl/r6p6a5f2v2S2Z2gQ9" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
+                                <Image
+                                    src="/assets/icons/gmaps.png"
+                                    alt="Google Maps Logo"
+                                    width={80}
+                                    height={80}
+                                />
+                            </Link>
                         </div>
                     </div>
                 </div>
