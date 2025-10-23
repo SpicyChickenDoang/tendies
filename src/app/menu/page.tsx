@@ -100,9 +100,9 @@ export default function MenuPage() {
                 The Sauce Bar is the Star
                 </h2>
                 <p className='text-center text-lg text-primary-foreground/90 mb-8 -mt-2 max-w-2xl mx-auto'>This is where the magic happens. Every tendie needs a partner in crime. Choose your player from our lineup of unique, must-try flavors.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
                 {sauces.map((sauce, index) => (
-                    <div key={index} className="text-center flex items-center justify-center gap-2">
+                    <div key={index} className="text-center flex items-center justify-center sm:justify-start gap-2">
                          <Star className="w-4 h-4 text-secondary/80 hidden sm:block" />
                          <div>
                             <h3 className="font-headline text-xl font-semibold text-secondary">{sauce.title}</h3>
