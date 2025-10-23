@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { type ImagePlaceholder } from '@/lib/placeholder-images';
-import { ArrowRight } from 'lucide-react';
 
 interface IntroProps {
   placeholder?: ImagePlaceholder;
@@ -16,18 +15,22 @@ export function Intro({ placeholder }: IntroProps) {
     'https://picsum.photos/seed/about-tenders/800/1000';
 
   return (
-    <section id="intro" className="relative w-full bg-background text-foreground h-screen flex items-center justify-center overflow-hidden">
-      
-      {/* Decorative Shapes */}
-      <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/20 rounded-full filter blur-2xl animate-blob"></div>
-      <div className="absolute top-1/2 right-1/4 w-32 h-32 bg-secondary/20 rounded-full filter blur-2xl animate-blob animation-delay-2000"></div>
-      <div className="absolute bottom-1/4 left-1/2 w-32 h-32 bg-primary/10 rounded-full filter blur-2xl animate-blob animation-delay-4000"></div>
+    <section 
+      id="intro" 
+      className="relative w-full bg-background text-foreground h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: "url('/assets/images/tendies-pattern.webp')",
+        backgroundSize:'400px',
+        backgroundRepeat: 'repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-background/80"></div>
       
       <div className="container relative z-10 mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <div className="relative flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-5 items-center gap-8">
           
           {/* Left: Text Content */}
-          <div className="w-full md:w-1/2 lg:w-3/5 text-center md:text-left z-10 space-y-8">
+          <div className="md:col-span-3 text-center md:text-left z-10 space-y-8 bg-card/50 backdrop-blur-sm p-8 rounded-2xl border border-border/20">
              <h1
                 className="font-headline text-6xl sm:text-7xl lg:text-8xl text-white font-black uppercase tracking-tighter"
                 style={{ textShadow: '0 6px 20px rgba(0,0,0,0.6)' }}
@@ -62,8 +65,8 @@ export function Intro({ placeholder }: IntroProps) {
           </div>
           
           {/* Right: Image */}
-          <div className="relative w-full md:w-1/2 lg:w-2/5 flex items-center justify-center md:justify-start">
-             <div className="relative w-72 h-96 md:w-80 md:h-[400px] lg:w-96 lg:h-[480px] bg-secondary p-4 rounded-3xl shadow-2xl shadow-black/50 transform -rotate-6 transition-transform duration-500 hover:rotate-0 hover:scale-105">
+          <div className="md:col-span-2 flex items-center justify-center">
+             <div className="relative w-80 h-[420px] md:w-full md:h-[500px] bg-secondary p-4 rounded-3xl shadow-2xl shadow-black/50 transform rotate-3 transition-transform duration-500 hover:rotate-0 hover:scale-105 bg-hero-pattern">
                  <Image
                     src={introImageUrl}
                     alt={placeholder?.description ?? 'Crispy chicken tenders in a vibrant setting'}

@@ -14,6 +14,9 @@ export default {
         headline: ['Poppins', 'sans-serif'],
         code: ['monospace'],
       },
+      backgroundImage: {
+        'hero-pattern': "url('/assets/images/tendies-pattern.webp')",
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
