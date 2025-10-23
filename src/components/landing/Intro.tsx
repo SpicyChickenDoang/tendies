@@ -16,7 +16,7 @@ export function Intro({ placeholder }: IntroProps) {
     'https://picsum.photos/seed/about-tenders/800/1000';
 
   return (
-    <section id="intro" className="w-full bg-background text-foreground">
+    <section id="intro" className="w-full bg-background text-foreground h-screen flex items-center">
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="relative w-full aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl shadow-black/50">
