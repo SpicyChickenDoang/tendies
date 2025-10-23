@@ -1,0 +1,70 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-tenders",
+      "description": "A close-up of golden, crunchy chicken tenders with glossy highlights and warm lighting.",
+      "imageUrl": "https://images.unsplash.com/photo-1605291581926-df4bf7ee3e89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGlja2VuJTIwdGVuZGVyc3xlbnwwfHx8fDE3NjA5MjkyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken tenders"
+    },
+    {
+      "id": "about-tenders",
+      "description": "A vibrant photo of crispy chicken tenders arranged artfully, with sauce splashes and a playful vibe.",
+      "imageUrl": "https://images.unsplash.com/photo-1627662168223-7df99068099a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlja2VuJTIwdGVuZGVyc3xlbnwwfHx8fDE3NjA5MjkyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken tenders"
+    },
+    {
+      "id": "classic-crunch",
+      "description": "The original legendary chicken tender, perfectly golden and crispy.",
+      "imageUrl": "https://images.unsplash.com/photo-1627662168781-4345690f0bb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlja2VuJTIwdGVuZGVyc3xlbnwwfHx8fDE3NjA5MjkyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken tenders"
+    },
+    {
+      "id": "spicy-blaze",
+      "description": "A fiery chicken tender with a spicy glaze, ready to ignite your taste buds.",
+      "imageUrl": "https://images.unsplash.com/photo-1590058301829-d16716ed706c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzcGljeSUyMGNoaWNrZW58ZW58MHx8fHwxNzYwODg5MzYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spicy chicken"
+    },
+    {
+      "id": "honey-gold",
+      "description": "A sweet and savory chicken tender coated in a rich honey gold sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1630564510846-09d14907db47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxob25leSUyMGNoaWNrZW58ZW58MHx8fHwxNzYwOTMwNTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "honey chicken"
+    },
+    {
+      "id": "garlic-butter",
+      "description": "A savory chicken tender drenched in garlic butter and herbs.",
+      "imageUrl": "https://images.unsplash.com/photo-1560953617-d40293abb3d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnYXJsaWMlMjBjaGlja2VufGVufDB8fHx8MTc2MDkzMDU3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garlic chicken"
+    },
+    {
+      "id": "bali-map",
+      "description": "A stylized map of Bali showing the location of Tendies restaurant.",
+      "imageUrl": "https://images.unsplash.com/photo-1518544914043-ada5ab6515da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWxpJTIwbWFwfGVufDB8fHx8MTc2MDk4MjYyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map Bali"
+    },
+    {
+      "id": "takeaway-bags",
+      "description": "Premium branded takeaway bags for Tendies, floating against a blue background.",
+      "imageUrl": "/assets/images/p-takeaway.jpg",
+      "imageHint": "takeaway bags"
+    },
+    {
+      "id": "core-meal",
+      "description": "Three signature crispy chicken tenders.",
+      "imageUrl": "https://picsum.photos/seed/core-meal/600/400",
+      "imageHint": "chicken tenders"
+    },
+    {
+      "id": "combo-up",
+      "description": "Chicken tenders with seasoned fries and a drink.",
+      "imageUrl": "https://picsum.photos/seed/combo-up/600/400",
+      "imageHint": "tenders fries"
+    },
+    {
+      "id": "party-pack",
+      "description": "A large box of crispy chicken tenders for sharing.",
+      "imageUrl": "https://picsum.photos/seed/party-pack/600/400",
+      "imageHint": "tenders box"
+    }
+  ]
+}

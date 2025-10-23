@@ -3,20 +3,25 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import { ArrowLeft, Star } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function MenuPage() {
   const menuItems = [
     {
+      id: 'core-meal',
       title: 'Core Meal (39k IDR)',
       description: 'The perfect starting point. Three of our signature crispy tenders. Simple, delicious, and waiting for sauce.',
     },
     {
+      id: 'combo-up',
       title: 'Combo Up!',
       description: 'Make it a meal. Add our perfectly seasoned fries and a drink to any tendie order.',
     },
     {
+      id: 'party-pack',
       title: 'Party Pack',
       description: "Bring the crew. A massive box of our crispy tenders, perfect for sharing. Or not. We don't judge.",
     },
@@ -62,12 +67,28 @@ export default function MenuPage() {
                 Build Your Combo
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {menuItems.map((item, index) => (
-                    <div key={index} className="bg-card p-6 rounded-lg border-2 border-primary shadow-lg transform hover:-rotate-2 transition-transform duration-300">
-                    <h3 className="font-headline text-2xl font-bold text-primary mb-2">{item.title}</h3>
-                    <p className="text-card-foreground/80">{item.description}</p>
+                {menuItems.map((item, index) => {
+                  const placeholder = PlaceHolderImages.find(p => p.id === item.id);
+                  return (
+                    <div key={index} className="bg-card rounded-lg border-2 border-primary shadow-lg transform hover:-rotate-2 transition-transform duration-300 overflow-hidden flex flex-col">
+                      {placeholder && (
+                        <div className="relative w-full aspect-[4/3]">
+                          <Image
+                            src={placeholder.imageUrl}
+                            alt={placeholder.description}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={placeholder.imageHint}
+                          />
+                        </div>
+                      )}
+                      <div className="p-6 flex flex-col flex-grow">
+                        <h3 className="font-headline text-2xl font-bold text-primary mb-2">{item.title}</h3>
+                        <p className="text-card-foreground/80 flex-grow">{item.description}</p>
+                      </div>
                     </div>
-                ))}
+                  )
+                })}
                 </div>
             </section>
 
