@@ -3,16 +3,10 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
-import { ArrowLeft, Sparkles } from 'lucide-react';
-import Image from 'next/image';
+import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
 export default function MenuPage() {
-  const menuPlaceholder: ImagePlaceholder | undefined = PlaceHolderImages.find(
-    (img) => img.id === 'about-tenders'
-  );
-
   const menuItems = [
     {
       title: 'Core Meal (39k IDR)',
@@ -38,21 +32,10 @@ export default function MenuPage() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-background text-primary-foreground overflow-x-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={menuPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/menu-bg/1920/1080'}
-          alt={menuPlaceholder?.description ?? 'Delicious chicken tenders'}
-          fill
-          className="object-cover"
-          data-ai-hint={menuPlaceholder?.imageHint ?? 'chicken tenders background'}
-        />
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-md"></div>
-      </div>
-
-      <div className="relative z-10 container mx-auto px-4 py-24 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-secondary text-primary-foreground">
+      <div className="container mx-auto px-4 py-24 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <Button asChild variant="outline" className="bg-transparent hover:bg-foreground hover:text-background mb-8">
+          <Button asChild variant="outline" className="bg-background text-foreground hover:bg-accent hover:text-accent-foreground mb-8">
             <Link href="/">
               <ArrowLeft className="mr-2 h-4 w-4" /> Go Back Home
             </Link>
@@ -61,7 +44,7 @@ export default function MenuPage() {
           <header className="text-center mb-12">
             <h1
               className="font-headline text-6xl md:text-8xl font-black uppercase text-primary mb-4"
-              style={{ textShadow: '0 4px 15px rgba(0,0,0,0.5)' }}
+              style={{ textShadow: '0 4px 15px rgba(0,0,0,0.1)' }}
             >
               The Menu
             </h1>
@@ -72,14 +55,14 @@ export default function MenuPage() {
 
           <section id="the-meals" className="mb-16">
             <h2
-              className="font-headline text-4xl md:text-5xl font-bold uppercase text-secondary mb-8 text-center"
-              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}
+              className="font-headline text-4xl md:text-5xl font-bold uppercase text-primary mb-8 text-center"
+              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
             >
               Build Your Combo
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {menuItems.map((item, index) => (
-                <div key={index} className="bg-card/50 p-6 rounded-lg border border-border/20 shadow-lg">
+                <div key={index} className="bg-card p-6 rounded-lg border border-border/20 shadow-lg">
                   <h3 className="font-headline text-2xl font-bold text-primary mb-2">{item.title}</h3>
                   <p className="text-card-foreground/80">{item.description}</p>
                 </div>
@@ -89,8 +72,8 @@ export default function MenuPage() {
 
           <section id="the-sauces" className="mb-16">
             <h2
-              className="font-headline text-4xl md:text-5xl font-bold uppercase text-secondary mb-8 text-center"
-              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}
+              className="font-headline text-4xl md:text-5xl font-bold uppercase text-primary mb-8 text-center"
+              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
             >
               The Sauce Bar is the Star
             </h2>
@@ -99,14 +82,14 @@ export default function MenuPage() {
               {sauces.map((sauce, index) => (
                 <div key={index} className="text-center">
                   <h3 className="font-headline text-xl font-semibold text-primary">{sauce.title}</h3>
-                  <p className="text-sm text-muted-foreground">{sauce.description}</p>
+                  <p className="text-sm text-foreground/70">{sauce.description}</p>
                 </div>
               ))}
             </div>
           </section>
 
           <section id="motherlode">
-            <Card className="bg-primary/80 border-2 border-primary text-primary-foreground shadow-2xl shadow-primary/20 overflow-hidden">
+            <Card className="bg-primary/90 border-2 border-primary text-primary-foreground shadow-2xl shadow-primary/20 overflow-hidden">
                 <CardContent className="p-8 text-center">
                   <h2 className="font-headline text-4xl font-black uppercase text-secondary mb-2" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.3)' }}>
                     Need More Sauce?
