@@ -100,7 +100,7 @@ export default function MenuPage() {
                 The Sauce Bar is the Star
                 </h2>
                 <p className='text-center text-lg text-primary-foreground/90 mb-8 -mt-2 max-w-2xl mx-auto'>This is where the magic happens. Every tendie needs a partner in crime. Choose your player from our lineup of unique, must-try flavors.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
                 {sauces.map((sauce) => {
                   const placeholder = PlaceHolderImages.find(p => p.id === sauce.id);
                   return (
