@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import { Navbar } from '@/components/landing/Navbar';
 
 export const metadata: Metadata = {
   title: 'Tendies Landing',
@@ -23,6 +24,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
+        <Navbar />
         {children}
         <Toaster />
       </body>

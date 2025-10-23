@@ -26,7 +26,7 @@ export function Hero({ placeholder }: HeroProps) {
           priority={true}
           data-ai-hint={placeholder?.imageHint ?? 'chicken tenders'}
         />
-        {/* <div className="absolute inset-0 bg-background/50 backdrop-blur-sm" /> */}
+         <div className="absolute inset-0 bg-black/30" />
       </div>
 
       <div
