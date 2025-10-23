@@ -58,11 +58,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-           <Button asChild size="md" className="font-bold rounded-full bg-primary text-primary-foreground hover:bg-primary/90">
-            <Link href="/order">
-              Order Now
-            </Link>
-          </Button>
         </nav>
 
         {/* Mobile Navigation */}
@@ -102,11 +97,6 @@ export function Navbar() {
                     </Link>
                   ))}
                 </nav>
-                 <Button asChild size="lg" className="w-full font-bold text-lg rounded-full mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
-                  <Link href="/order" onClick={() => setIsMobileMenuOpen(false)}>
-                    Order Now
-                  </Link>
-                </Button>
               </div>
             </SheetContent>
           </Sheet>
