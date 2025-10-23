@@ -11,43 +11,37 @@ export default function AboutPage() {
   const aboutPlaceholder: ImagePlaceholder | undefined = PlaceHolderImages.find(
     (img) => img.id === 'about-tenders'
   );
-  
-  const aboutPagePlaceholder: ImagePlaceholder | undefined = PlaceHolderImages.find(
-    (img) => img.id === 'about-tenders'
-  );
 
   return (
-    <div className="relative min-h-screen bg-background text-primary-foreground overflow-x-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={aboutPagePlaceholder?.imageUrl ?? 'https://picsum.photos/seed/about-bg/1920/1080'}
-          alt={aboutPagePlaceholder?.description ?? 'Interior of a modern restaurant'}
-          fill
-          className="object-cover"
-          data-ai-hint={aboutPagePlaceholder?.imageHint ?? 'restaurant interior'}
-        />
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-md"></div>
-      </div>
+    <div 
+        className="min-h-screen text-primary-foreground py-16"
+        style={{
+            backgroundImage: "url('/assets/images/tendies-pattern.webp')",
+            backgroundSize:'400px',
+            backgroundRepeat: 'repeat',
+        }}
+    >
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute top-0 left-4">
+            <Button asChild variant="outline" className="bg-background/80 text-foreground hover:bg-accent hover:text-accent-foreground mb-8">
+                <Link href="/">
+                <ArrowLeft className="mr-2 h-4 w-4" /> Go Back Home
+                </Link>
+            </Button>
+        </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-24 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <Button asChild variant="outline" className="bg-transparent hover:bg-foreground hover:text-background mb-8">
-            <Link href="/">
-              <ArrowLeft className="mr-2 h-4 w-4" /> Go Back Home
-            </Link>
-          </Button>
-
+        <div className="max-w-6xl mx-auto bg-background/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-4 border-primary shadow-2xl">
           <header className="text-center mb-12">
             <h1
               className="font-headline text-6xl md:text-8xl font-black uppercase text-primary mb-4"
-              style={{ textShadow: '0 4px 15px rgba(0,0,0,0.5)' }}
+              style={{ textShadow: '4px 4px 0px hsl(var(--secondary))' }}
             >
               Fresh, Fun & Fried in Bali
             </h1>
           </header>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl shadow-primary/20">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg border-2 border-primary transform hover:rotate-2 transition-transform duration-300">
                <Image
                     src={aboutPlaceholder?.imageUrl ?? 'https://picsum.photos/seed/about-page/800/800'}
                     alt={aboutPlaceholder?.description ?? 'Vibrant photo of crispy chicken tenders'}
@@ -56,7 +50,7 @@ export default function AboutPage() {
                     data-ai-hint={aboutPlaceholder?.imageHint ?? 'chicken tenders'}
                 />
             </div>
-            <div className="space-y-6 text-lg md:text-xl text-left text-foreground/90 bg-card/20 p-8 rounded-2xl border border-border/10">
+            <div className="space-y-6 text-lg md:text-xl text-left text-foreground/90 bg-card/80 p-8 rounded-2xl border-2 border-primary shadow-lg transform hover:-rotate-1 transition-transform duration-300">
                 <p>
                 We started TENDIES with a radical idea: what if we made the crispiest, juiciest, most legendary chicken tenders on the planet? So we did. We're a throwback, fast-casual joint in the heart of Bali, serving up good times for locals and travelers alike.
                 </p>
