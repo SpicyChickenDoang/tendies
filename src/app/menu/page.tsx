@@ -28,12 +28,12 @@ export default function MenuPage() {
   ];
 
   const sauces = [
-    { title: 'TENDIES Sauce (House)', description: 'The secret signature. You gotta try it.' },
-    { title: 'Classic Ranch', description: 'Cool, creamy, and classic for a reason.' },
-    { title: 'Honey Mustard', description: 'That perfect blend of sweet with a zing.' },
-    { title: 'Zesty Lime Crema', description: 'A fresh, citrusy kick to cut through the crunch.' },
-    { title: 'Hot Honey', description: 'For those who like it sweet with a little heat.' },
-    { title: 'Classic BBQ', description: 'Smoky, bold, and everything you want it to be.' },
+    { id: 'tendies-sauce', title: 'TENDIES Sauce (House)', description: 'The secret signature. You gotta try it.' },
+    { id: 'classic-ranch', title: 'Classic Ranch', description: 'Cool, creamy, and classic for a reason.' },
+    { id: 'honey-mustard', title: 'Honey Mustard', description: 'That perfect blend of sweet with a zing.' },
+    { id: 'zesty-lime', title: 'Zesty Lime Crema', description: 'A fresh, citrusy kick to cut through the crunch.' },
+    { id: 'hot-honey', title: 'Hot Honey', description: 'For those who like it sweet with a little heat.' },
+    { id: 'classic-bbq', title: 'Classic BBQ', description: 'Smoky, bold, and everything you want it to be.' },
   ];
 
   return (
@@ -100,16 +100,29 @@ export default function MenuPage() {
                 The Sauce Bar is the Star
                 </h2>
                 <p className='text-center text-lg text-primary-foreground/90 mb-8 -mt-2 max-w-2xl mx-auto'>This is where the magic happens. Every tendie needs a partner in crime. Choose your player from our lineup of unique, must-try flavors.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
-                {sauces.map((sauce, index) => (
-                    <div key={index} className="text-center flex items-center justify-center sm:justify-start gap-2">
-                         <Star className="w-4 h-4 text-secondary/80 hidden sm:block" />
-                         <div>
-                            <h3 className="font-headline text-xl font-semibold text-secondary">{sauce.title}</h3>
-                            <p className="text-sm text-primary-foreground/80">{sauce.description}</p>
-                         </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                {sauces.map((sauce) => {
+                  const placeholder = PlaceHolderImages.find(p => p.id === sauce.id);
+                  return (
+                    <div key={sauce.id} className="bg-card rounded-lg border-2 border-secondary shadow-lg transform hover:rotate-2 transition-transform duration-300 overflow-hidden flex flex-col">
+                      {placeholder && (
+                        <div className="relative w-full aspect-square">
+                          <Image
+                            src={placeholder.imageUrl}
+                            alt={placeholder.description}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={placeholder.imageHint}
+                          />
+                        </div>
+                      )}
+                      <div className="p-4 flex flex-col flex-grow text-center">
+                        <h3 className="font-headline text-xl font-bold text-secondary mb-1">{sauce.title}</h3>
+                        <p className="text-sm text-primary-foreground/80 flex-grow">{sauce.description}</p>
+                      </div>
                     </div>
-                ))}
+                  )
+                })}
                 </div>
             </section>
 

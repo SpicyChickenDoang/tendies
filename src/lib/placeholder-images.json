@@ -65,6 +65,42 @@
       "description": "A large box of crispy chicken tenders for sharing.",
       "imageUrl": "https://images.unsplash.com/photo-1728034261748-f03195cf54ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZW5kZXJzJTIwYm94fGVufDB8fHx8MTc2MTIzNzQ0OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tenders box"
+    },
+    {
+      "id": "tendies-sauce",
+      "description": "The secret signature Tendies sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1612451291797-1e54193fa344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaXBwaW5nJTIwc2F1Y2V8ZW58MHx8fHwxNzYxMjM1NTQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dipping sauce"
+    },
+    {
+      "id": "classic-ranch",
+      "description": "Cool and creamy classic ranch sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1656103743126-656ce0ed6291?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmFuY2glMjBzYXVjZXxlbnwwfHx8fDE3NjEyMzc2ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ranch sauce"
+    },
+    {
+      "id": "honey-mustard",
+      "description": "Sweet and tangy honey mustard sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1548644802-ec5adf91336a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob25leSUyMG11c3RhcmR8ZW58MHx8fHwxNzYxMjM3Njg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "honey mustard"
+    },
+    {
+      "id": "zesty-lime",
+      "description": "A zesty lime crema sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1686998424941-9006770e7f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaW1lJTIwY3JlbWF8ZW58MHx8fHwxNzYxMjM3Njg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lime crema"
+    },
+    {
+      "id": "hot-honey",
+      "description": "Sweet with a little heat hot honey sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1494391752466-8a915c192649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxob3QlMjBob25leXxlbnwwfHx8fDE3NjEyMzc2ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hot honey"
+    },
+    {
+      "id": "classic-bbq",
+      "description": "Smoky and bold classic BBQ sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1611354574034-9655b5b72d59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYnElMjBzYXVjZXxlbnwwfHx8fDE3NjEyMzc2ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bbq sauce"
     }
   ]
 }
