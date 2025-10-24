@@ -67,15 +67,15 @@ export function Navbar() {
         <div className="md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <MenuIcon className="h-6 w-6 text-foreground" />
+              <Button variant="ghost">
+                <MenuIcon className="text-foreground" style={{ width: '40px', height: '40px' }} />
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-background/95 backdrop-blur-xl">
               <div className="flex h-full flex-col p-6">
-                <div className="mb-8 flex justify-between items-center">
-                   <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="mb-8 flex mx-auto items-center mt-10">
+                  <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
                     <Image
                       src="/assets/images/logo-white.png"
                       alt="Tendies Logo"
@@ -84,11 +84,11 @@ export function Navbar() {
                       className="h-10 w-auto"
                     />
                   </Link>
-                   {/* <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
+                  {/* <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
                       <X className="h-6 w-6" />
                    </Button> */}
                 </div>
-                <nav className="flex flex-col items-center justify-center flex-1 gap-6 text-center">
+                <nav className="flex flex-col items-center flex-1 gap-6 text-center">
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
