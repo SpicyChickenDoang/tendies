@@ -31,12 +31,12 @@ export default function FindUsPage() {
                 Come Get Your Tendies
                 </h1>
                 <p className="text-lg md:text-xl max-w-3xl mx-auto text-foreground/90">
-                Find us in Bali. We've got a cool, welcoming atmosphere waiting for you. Swing by to crush your craving.
+                Find us in <span className='text-primary font-bold uppercase'>bali</span>. We've got a cool, welcoming atmosphere waiting for you. Swing by to crush your <span className='text-primary font-bold uppercase'>craving</span>.
                 </p>
             </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg border-2 border-primary transform hover:rotate-2 transition-transform duration-300">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg border-2 border-primary transform hover:rotate-2 transition-transform duration-300 size-[100%]">
                     <Image
                         src={"/assets/images/bali-map.jpg"}
                         alt={mapPlaceholder?.description ?? 'Map of our location in Bali'}
@@ -51,7 +51,7 @@ export default function FindUsPage() {
                         />
                     </div>
                 </div>
-                <div className="space-y-8 text-lg text-left text-foreground/90 bg-card/80 p-8 rounded-2xl border-2 border-primary shadow-lg transform hover:-rotate-1 transition-transform duration-300">
+                <div className="space-y-8 text-lg text-left text-foreground/90 bg-card/80 p-8 rounded-2xl border-2 border-primary shadow-lg transform hover:-rotate-1 transition-transform duration-300 size-[100%]">
                     <div>
                         <h3 className="font-headline text-2xl font-bold text-primary mb-2 flex items-center">
                             <Navigation className="mr-3 h-6 w-6" />
@@ -67,8 +67,8 @@ export default function FindUsPage() {
                             Hours
                         </h3>
                         <div className="space-y-1">
-                            <p><strong className="font-semibold text-secondary">Mon - Thu:</strong> 10am - 12am</p>
-                            <p><strong className="font-semibold text-secondary">Fri - Sun:</strong> 9am - 3am</p>
+                            <p><strong className="font-semibold text-primary/80">Mon - Thu:</strong> 10am - 12am</p>
+                            <p><strong className="font-semibold text-primary/80">Fri - Sun:</strong> 9am - 3am</p>
                         </div>
                     </div>
                     <div>

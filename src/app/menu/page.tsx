@@ -54,7 +54,7 @@ export default function MenuPage() {
                 The Menu
                 </h1>
                 <p className="text-lg md:text-xl max-w-2xl mx-auto text-foreground/90">
-                Craving that unforgettable crunch? You found it. We're TENDIES, Bali's home for high-quality chicken fingers served with a side of freshness and fun. It’s simple: Bold flavors, a cool vibe, and the best chicken tendies you’ve ever had.
+                <span className='text-primary font-bold uppercase'>craving</span> that unforgettable crunch? You found it. We're <span className='text-primary font-bold uppercase'>tendies</span>, Bali's home for high-quality chicken fingers served with a side of freshness and fun. It’s simple: Bold flavors, a cool vibe, and the best chicken <span className='text-primary font-bold uppercase'>tendies</span> you’ve ever had.
                 </p>
             </header>
 
@@ -99,7 +99,7 @@ export default function MenuPage() {
                 >
                 The Sauce Bar is the Star
                 </h2>
-                <p className='text-center text-lg text-primary-foreground/90 mb-8 -mt-2 max-w-2xl mx-auto'>This is where the magic happens. Every tendie needs a partner in crime. Choose your player from our lineup of unique, must-try flavors.</p>
+                <p className='text-center text-lg text-primary-foreground/90 mb-8 -mt-2 max-w-2xl mx-auto'>This is where the <span className='text-secondary font-bold uppercase'>magic</span> happens. Every tendie needs a partner in crime. Choose your player from our lineup of <span className='text-secondary font-bold uppercase'>unique</span>, must-try flavors.</p>
                 <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
                 {sauces.map((sauce) => {
                   const placeholder = PlaceHolderImages.find(p => p.id === sauce.id);
@@ -134,7 +134,7 @@ export default function MenuPage() {
                         Need More Sauce?
                     </h2>
                     <p className="text-lg text-foreground/90">
-                        Ask for <strong className='font-bold text-primary'>"The Motherlode"</strong> — a legendary 32oz cup of your favorite sauce, made for our superfans.
+                        Ask for <strong className='font-bold text-primary uppercase'>"The Motherlode"</strong> — a legendary 32oz cup of your favorite sauce, made for our superfans.
                     </p>
                     </CardContent>
                 </Card>
