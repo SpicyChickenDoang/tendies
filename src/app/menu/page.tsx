@@ -1,11 +1,9 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
-import { ArrowLeft, Star } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 export default function MenuPage() {
   const menuItems = [
@@ -77,7 +75,7 @@ export default function MenuPage() {
                             alt={placeholder.description}
                             fill
                             loading="lazy"
-                            className="object-cover"
+                            className={cn("object-cover", placeholder.id === 'party-pack' ? 'object-top' : 'object-center')}
                             data-ai-hint={placeholder.imageHint}
                           />
                         </div>
