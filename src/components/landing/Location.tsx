@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { MapPin } from 'lucide-react';
 import { type ImagePlaceholder } from '@/lib/placeholder-images';
 import Link from 'next/link';
+import GoogleMaps from '../GoogleMaps';
 
 interface LocationProps {
   placeholder?: ImagePlaceholder;
@@ -31,19 +32,7 @@ export function Location({ placeholder }: LocationProps) {
           </p>
         </div>
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg shadow-black/50">
-          <Image
-            src={"/assets/images/bali-map.jpg"}
-            alt={placeholder?.description ?? 'Map of Bali'}
-            fill
-            className="object-cover"
-            data-ai-hint={placeholder?.imageHint ?? 'map Bali'}
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <MapPin
-              className="w-16 h-16 text-blue-700 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)] animate-bounce"
-              strokeWidth={1.5}
-            />
-          </div>
+          <GoogleMaps />
           <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-50" />
         </div>
         <div className='flex items-center gap-5'>

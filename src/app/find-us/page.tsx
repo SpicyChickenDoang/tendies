@@ -6,6 +6,7 @@ import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-imag
 import { ArrowLeft, MapPin, Clock, Navigation, ShoppingBag } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import GoogleMaps from '@/components/GoogleMaps'
 
 export default function FindUsPage() {
   const mapPlaceholder: ImagePlaceholder | undefined = PlaceHolderImages.find(
@@ -37,19 +38,7 @@ export default function FindUsPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg border-2 border-primary transform hover:rotate-2 transition-transform duration-300 size-[100%]">
-                    <Image
-                        src={"/assets/images/bali-map.jpg"}
-                        alt={mapPlaceholder?.description ?? 'Map of our location in Bali'}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={mapPlaceholder?.imageHint ?? 'Bali map'}
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                        <MapPin
-                        className="w-16 h-16 text-primary drop-shadow-[0_4px_8px_rgba(0,0,0,0.7)] animate-bounce"
-                        strokeWidth={1.5}
-                        />
-                    </div>
+                    <GoogleMaps />
                 </div>
                 <div className="space-y-8 text-lg text-left text-foreground/90 bg-card/80 p-8 rounded-2xl border-2 border-primary shadow-lg transform hover:-rotate-1 transition-transform duration-300 size-[100%]">
                     <div>
