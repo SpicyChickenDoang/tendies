@@ -57,17 +57,17 @@ export function Intro2({ placeholder }: IntroProps) {
   // Define carousel images
   const carouselImages = [
     {
-      mobile: '/assets/images/lp-1.webp',
+      mobile: '/assets/images/lp-1-m.webp',
       desktop: '/assets/images/lp-1.webp',
       alt: 'Crispy chicken tenders in a vibrant setting'
     },
     {
-      mobile: '/assets/images/lp-2.webp',
+      mobile: '/assets/images/lp-2-m.webp',
       desktop: '/assets/images/lp-2.webp',
       alt: 'Golden fried chicken with dipping sauces'
     },
     {
-      mobile: '/assets/images/lp-3.webp',
+      mobile: '/assets/images/lp-3-m.webp',
       desktop: '/assets/images/lp-3.webp',
       alt: 'Fresh chicken tenders platter'
     }
@@ -91,8 +91,6 @@ export function Intro2({ placeholder }: IntroProps) {
                   src={isMobile ? image.mobile : image.desktop}
                   alt={image.alt}
                   fill
-                  // height={100}
-                  // width={100}
                   priority={index === 0}
                   loading={index === 0 ? 'eager' : 'lazy'}
                   className="object-contain"
@@ -128,7 +126,7 @@ export function Intro2({ placeholder }: IntroProps) {
       {/* Text Content */}
       <div className="absolute bottom-6 left-0 right-0 z-20 text-center px-4">
         <h1
-          className="text-6xl text-white font-black uppercase leading-tight"
+          className="text-3xl md:text-6xl text-white font-black uppercase leading-tight"
           style={{ textShadow: '0 6px 20px rgba(255, 215, 0, 0.8)' }}
         >
           This Chicken Hits Different.
