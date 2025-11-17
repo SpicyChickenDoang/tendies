@@ -5,6 +5,7 @@ import { Footer } from '@/components/landing/Footer';
 import { Location } from '@/components/landing/Location';
 import { Menu } from '@/components/landing/Menu';
 import { Intro } from '@/components/landing/Intro';
+import { Intro2 } from '@/components/landing/Intro2';
 
 export default async function Home() {
   const heroPlaceholder = PlaceHolderImages.find(
@@ -23,7 +24,8 @@ export default async function Home() {
   return (
     <div className="flex flex-col">
       <main className="flex min-h-screen flex-col items-center justify-center bg-background overflow-x-hidden">
-        <Intro placeholder={heroPlaceholder} />
+        {/* <Intro placeholder={heroPlaceholder} /> */}
+        <Intro2 placeholder={heroPlaceholder} />
         <About />
         <AnimatedDivider />
         <Menu placeholders={menuPlaceholders} />
