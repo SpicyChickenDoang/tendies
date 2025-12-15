@@ -57,18 +57,23 @@ export function Intro2({ placeholder }: IntroProps) {
   // Define carousel images
   const carouselImages = [
     {
-      mobile: '/assets/images/lp-1-m.webp',
-      desktop: '/assets/images/lp-1.webp',
+      mobile: '/assets/hero/Mobile-1.webp',
+      desktop: '/assets/hero/PC-1.webp',
       alt: 'Crispy chicken tenders in a vibrant setting'
     },
     {
-      mobile: '/assets/images/lp-2-m.webp',
-      desktop: '/assets/images/lp-2.webp',
+      mobile: '/assets/hero/Mobile-2.webp',
+      desktop: '/assets/hero/PC-2.webp',
       alt: 'Golden fried chicken with dipping sauces'
     },
     {
-      mobile: '/assets/images/lp-3-m.webp',
-      desktop: '/assets/images/lp-3.webp',
+      mobile: '/assets/hero/Mobile-3.webp',
+      desktop: '/assets/hero/PC-3.webp',
+      alt: 'Fresh chicken tenders platter'
+    },
+    {
+      mobile: '/assets/hero/Mobile-4.webp',
+      desktop: '/assets/hero/PC-4.webp',
       alt: 'Fresh chicken tenders platter'
     }
   ];
